@@ -1,0 +1,32 @@
+.buttonsSection {
+    display: flex;
+    gap:50px;
+    margin: 10px;
+}
+
+.buttonSelected {
+    animation: pulse 1s infinite ease-in-out;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+    25% {
+      transform: scale(1.01);
+      box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.02);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+      }
+      75% {
+        transform: scale(1.01);
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+      }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+  }
